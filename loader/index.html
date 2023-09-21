@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Mutation Observer Testing</h1>
+    <script src="./async.js"></script>
+    <script>
+      // Add 2000 elements
+        setTimeout(()=>{
+          for (let i = 1; i <= 2000; i++) {
+          const el = document.createElement(`pw-${i}`);
+          document.body.prepend(el);
+        }
+        }, 15000)
+    </script>
+  </body>
+</html>
